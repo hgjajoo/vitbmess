@@ -103,3 +103,7 @@ input:focus + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
+h4 {
+    text-align: center;
+    color: #727070;
+}
