@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mess Timetable</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Mayuri Mess Timetable</h1>
+        <h2>November '23</h2>
+        <label for="day">Select Day:</label>
+        <select id="day" onchange="updateMealTimetable()">
+            <option selected disabled hidden>Choose</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+
+        </select>
+
+        <label for="meal">Select Meal:</label>
+        <select id="meal" onchange="updateMealTimetable()">
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Snacks">Snacks</option>
+            <option value="Dinner">Dinner</option>
+
+        </select>
+
+        <div id="mealTimetable"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
