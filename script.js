@@ -110,7 +110,7 @@ function setDefaultMeal() {
         defaultMeal = "Breakfast";
     } else if (currentHour >= 10 && currentHour < 15) {
         defaultMeal = "Lunch";
-    } else if (currentHour >= 15 && currentHour < 17) {
+    } else if (currentHour >= 15 && currentHour < 16) {
         defaultMeal = "Snacks";
     } else if (currentHour >= 17 && currentHour < 24) {
         defaultMeal = "Dinner";
