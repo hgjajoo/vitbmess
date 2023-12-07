@@ -2,45 +2,45 @@ function getMealTimetable(day, meal) {
     var timetableData = {
         Monday: {
             Breakfast: ["Idli, Medu Vada", "Sambar, Peanut Chutney", "Fruit", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
-            Lunch: ["Salad", "Roti", "Rajma Gharwala", "Jeera Rice/Rice", "Chilli Potato", "Lauki More", "Rasam"],
-            Snacks: ["Dal Vada/Kachori", "Milk-Tea-Coffee"],
+            Lunch: ["Salad", "Roti", "Rajma Gharwala", "Jeera Rice/Rice", "Chilli Potato", "Rice", "Rasam","Green Kootu", "Potato Poriyal"],
+            Snacks: ["Noodles/Kachori", "Milk-Tea-Coffee"],
             Dinner: ["Roti", "Seasonal Veg", "Egg Burji Masala", "Dal Fry", "Rice", "Rasam", "Pickle"]
         },
         Tuesday: {
             Breakfast: ["Masala Paratha/Puri", "Veg Kurma", "Banana", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
-            Lunch: ["Salad", "Roti/Poori", "Channa Masala", "Ghee Rice", "Dal Tadka", "Sambar", "Rasam", "Veg Poriyal", "Curd"],
-            Snacks: ["Onion Aloo Bhajji", "Milk-Tea-Coffee"],
-            Dinner: ["Roti", "Kuska", "Sev Tamatar", "Masala Dal", "Rasam", "Halwa"]
+            Lunch: ["Salad", "Poori", "Channa Masala", "Ghee Rice", "Dal Tadka", "Sambar", "Rasam", "Veg Poriyal"],
+            Snacks: ["Bhel Puri", "Milk-Tea-Coffee"],
+            Dinner: ["Roti", "Kuska", "Veg 65", "Masala Dal", "Rasam", "Fruit Custard"]
         },
         Wednesday: {
             Breakfast: ["Onion/Masala Uthapam", "Sambar, Karam Chutney", "Fruit", "Boiled Egg,Sprouts", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
-            Lunch: ["Salad", "Roti", "Kadai Veg", "Rice", "Mix Dal", "V.Poriyal", "Rasam", "Butter Milk", "Boondi/Kheer"],
-            Snacks: ["Pani Poori/Bread Pakoda", "Milk-Tea-Coffee"],
-            Dinner: ["Roti", "Rice", "Plain Dal", "Chicken", "Paneer", "Rasam,Pickle"]
+            Lunch: ["Salad", "Roti", "Kadai Veg", "Rice", "Mix Dal", "V.Poriyal", "Rasam", "Boondi/Kheer"],
+            Snacks: ["Pani Poori/Bread Pakoda/Spring Roll", "Milk-Tea-Coffee"],
+            Dinner: ["Roti", "Rice", "Plain Dal", "Chicken", "Palak Paneer", "Rasam,Pickle"]
         },
         Thursday: {
             Breakfast: ["Indori Poha,Pongal", "Jalebi", "Banana", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
-            Lunch: ["Salad", "Roti", "Veg Kofta", "Tomato Dal", "Veg Pulao", "Plain Rice", "Bhindi Fry", "Rasam", "Curd"],
+            Lunch: ["Salad", "Roti", "Veg Kofta", "Tomato Dal", "Veg Pulao", "Plain Rice", "Poriyal/Kholambu", "Rasam", "Sambhar"],
             Snacks: ["Sweet Corn Salad/Channa Masala", "Milk-Tea-Coffee"],
-            Dinner: ["Roti", "Dum Aloo", "Egg Masala", "Rice", "Dal Fry", "Rasam,Pickle"]
+            Dinner: ["Roti", "Palak Aloo", "Egg Masala", "Rice", "Dal Fry", "Rasam,Pickle"]
         },
         Friday: {
             Breakfast: ["Pav Bhaji", "Chutney", "Fruit", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
             Lunch: ["Fryums", "Veg Biryani", "Jeera Aloo", "Roti", "Dalcha", "Plain Rice", "Raw Banana Poryial", "Rasam", "Boondi Raiyta"],
-            Snacks: ["Samosa, Sauce", "Milk-Tea-Coffee"],
-            Dinner: ["Roti", "Rice", "Dal Tadka", "Chicken", "Paneer", "Rasam,Pickle"]
+            Snacks: ["Samosa/Aloo Chana Chat", "Milk-Tea-Coffee"],
+            Dinner: ["Roti", "Rice", "Dal Tadka", "Chicken", "Kadai Paneer", "Rasam,Pickle"]
         },
         Saturday: {
             Breakfast: ["Bhatura/Poori", "Chole/Aloo Matar", "Banana", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
-            Lunch: ["Salad", "Roti", "Channa Dal", "Khichdi/Coconut Rice", "Began Fry", "Sambhar", "Rasam", "Butter Milk"],
-            Snacks: ["Patties/Cream Roll/Bhel Puri/Spring Roll", "Milk-Tea-Coffee"],
-            Dinner: ["Chapati", "Fried Rice/Noodles", "Aloo Badi", "Veg Manchurian Gravy", "Rice", "Rasam"]
+            Lunch: ["Salad", "Roti", "Channa Dal", "Khichdi/Coconut Rice", "Bhindi Fry/Cabbage", "Veg Karakuzambu", "Rasam"],
+            Snacks: ["Masala Vada/Bhajji", "Milk-Tea-Coffee"],
+            Dinner: ["Chapati", "Fried Rice", "Aloo Badi", "Veg Manchurian Gravy", "Rice", "Rasam"]
         },
         Sunday: {
             Breakfast: ["Masala Dosa", "Sambhar, Chutney", "Fruit", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
             Lunch: ["Fryums", "Onion Cucumber Raitha", "Roti", "Hyd Chicken Biryani", "Hyd Veg Biryani", "Masala Dal", "Matar Paneer"],
             Snacks: ["Dhokla/Pasta, Sauce", "Milk-Tea-Coffee"],
-            Dinner: ["Chapathi", "Rice", "Veg Korma", "Dal Tadka", "Rasam", "Gulab Jamun"]
+            Dinner: ["Chapathi", "Rice", "Veg Korma", "Dal Makhani", "Rasam", "Gulab Jamun/Gajar Halwa"]
         }
 
     };
@@ -110,7 +110,7 @@ function setDefaultMeal() {
         defaultMeal = "Breakfast";
     } else if (currentHour >= 10 && currentHour < 15) {
         defaultMeal = "Lunch";
-    } else if (currentHour >= 15 && currentHour < 16) {
+    } else if (currentHour >= 15 && currentHour < 17) {
         defaultMeal = "Snacks";
     } else if (currentHour >= 17 && currentHour < 24) {
         defaultMeal = "Dinner";
