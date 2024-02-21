@@ -1,46 +1,46 @@
 function getMealTimetable(day, meal) {
     var timetableData = {
         Monday: {
-            Breakfast: ["Idli, Medu Vada", "Sambar, Peanut Chutney", "Fruit", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
-            Lunch: ["Salad", "Roti", "Rajma Gharwala", "Jeera Rice/Rice", "Chilli Potato", "Rice", "Rasam","Green Kootu", "Potato Poriyal"],
+            Breakfast: ["Idli, Medu Vada/ Masala Vada", "Sambar, Peanut Chutney", "Banana/Fruit Salad", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
+            Lunch: ["Salad", "Roti", "Rajma Gharwala", "Jeera Rice/Rice", "Aloo Gobi Sabji", "Rice", " Pepper Rasam", "More Kuzhambu", "Potato Poriyal"],
             Snacks: ["Noodles/Kachori", "Milk-Tea-Coffee"],
-            Dinner: ["Roti", "Seasonal Veg", "Egg Burji Masala", "Dal Fry", "Rice", "Rasam", "Pickle"]
+            Dinner: ["Roti", "Aloo Bhindi Masala", "Egg Gravy", "Dal Fry", "Rice", "Rasam", "Pickle"]
         },
         Tuesday: {
-            Breakfast: ["Masala Paratha/Puri", "Veg Kurma", "Banana", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
-            Lunch: ["Salad", "Poori", "Channa Masala", "Ghee Rice", "Dal Tadka", "Sambar", "Rasam", "Veg Poriyal"],
-            Snacks: ["Bhel Puri", "Milk-Tea-Coffee"],
-            Dinner: ["Roti", "Kuska", "Veg 65", "Masala Dal", "Rasam", "Fruit Custard"]
+            Breakfast: ["Puri", "Aloo Chana Dal Sabji", "Banana/Fruit Salad", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
+            Lunch: ["Salad", "Roti", "Aloo Matar Masala", "Ghee/ Plain Rice", "Dal Tadka", "Sambar", "Ginger Rasam", "Veg Poriyal", "Green Kootu", "Curd"],
+            Snacks: ["Pani Puri", "Milk-Tea-Coffee"],
+            Dinner: ["Roti", "Kuska", "Dry Veg 65", "Masala Dal", "Rasam", "Fruit Custard/ Halwa", "Pickle"]
         },
         Wednesday: {
-            Breakfast: ["Onion/Masala Uthapam", "Sambar, Karam Chutney", "Fruit", "Boiled Egg,Sprouts", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
-            Lunch: ["Salad", "Roti", "Kadai Veg", "Rice", "Mix Dal", "V.Poriyal", "Rasam", "Boondi/Kheer"],
-            Snacks: ["Pani Poori/Bread Pakoda/Spring Roll", "Milk-Tea-Coffee"],
-            Dinner: ["Roti", "Rice", "Plain Dal", "Chicken", "Palak Paneer", "Rasam,Pickle"]
+            Breakfast: ["Onion Veg Uthapam", "Sambar, Chutney", "Boiled Egg,Sprouts", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
+            Lunch: ["Salad", "Roti", "Aloo Palak", "Rice", "Mix Dal", "Puli Kuzhambu", "Garlic Rasam", "Boondi/ Payasam", "Pickle"],
+            Snacks: ["Samosa/ Sandwich", "Milk-Tea-Coffee"],
+            Dinner: ["Roti", "Rice", "Plain Dal", "Chicken Masala", "Paneer Masala", "Rasam,Pickle"]
         },
         Thursday: {
-            Breakfast: ["Indori Poha,Pongal", "Jalebi", "Banana", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
-            Lunch: ["Salad", "Roti", "Veg Kofta", "Tomato Dal", "Veg Pulao", "Plain Rice", "Poriyal/Kholambu", "Rasam", "Sambhar"],
-            Snacks: ["Sweet Corn Salad/Channa Masala", "Milk-Tea-Coffee"],
-            Dinner: ["Roti", "Palak Aloo", "Egg Masala", "Rice", "Dal Fry", "Rasam,Pickle"]
+            Breakfast: ["Poha", "Jalebi", "Banana/ Fruit Salad", "Pongal-Sambar", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
+            Lunch: ["Butter Milk", "Roti", "Veg Kofta", "Tomato Dal", "Veg Pulao", "Plain Rice", "Beetroot Poriyal", "Tomato Rasam", "Sambhar", "Pickle"],
+            Snacks: ["Sweet Corn Salad/ Burger", "Milk-Tea-Coffee"],
+            Dinner: ["Roti", "Seasonal Veg", "Egg Masala", "Rice", "Dal Fry", "Rasam,Pickle", "Soup"]
         },
         Friday: {
-            Breakfast: ["Pav Bhaji", "Chutney", "Fruit", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
-            Lunch: ["Fryums", "Veg Biryani", "Jeera Aloo", "Roti", "Dalcha", "Plain Rice", "Raw Banana Poryial", "Rasam", "Boondi Raiyta"],
-            Snacks: ["Samosa/Aloo Chana Chat", "Milk-Tea-Coffee"],
-            Dinner: ["Roti", "Rice", "Dal Tadka", "Chicken", "Kadai Paneer", "Rasam,Pickle"]
+            Breakfast: ["Rava Upma, Semiya Upma", "Chutney", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
+            Lunch: ["Veg Biryani", "Brinjal Masala", "Roti", "Masoor Dal", "Plain Rice/ Sabar Rice", "Raw Banana Poryial", "Rasam", "Boondi Raiyta"],
+            Snacks: ["Pav Bhaji", "Milk-Tea-Coffee"],
+            Dinner: ["Roti", "Rice", "Dal Tadka", "Butter Chicken", "Kadai Paneer", "Rasam,Pickle"]
         },
         Saturday: {
-            Breakfast: ["Bhatura/Poori", "Chole/Aloo Matar", "Banana", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
-            Lunch: ["Salad", "Roti", "Channa Dal", "Khichdi/Coconut Rice", "Bhindi Fry/Cabbage", "Veg Karakuzambu", "Rasam"],
-            Snacks: ["Masala Vada/Bhajji", "Milk-Tea-Coffee"],
-            Dinner: ["Chapati", "Fried Rice", "Aloo Badi", "Veg Manchurian Gravy", "Rice", "Rasam"]
+            Breakfast: ["Bhatura", "Chole", "Banana/Fruit Salad", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
+            Lunch: ["Fryums", "Roti", "Channa Dal", "Vegetable Khichdi/Lemon Rice", "Aloo Cabbage Masala", "Veg Karakuzambu", "Rasam", "Lemon Juice"],
+            Snacks: ["Cutlet", "Milk-Tea-Coffee"],
+            Dinner: ["Roti", "Fried Rice", "Sev Tamatar", "Veg Manchurian", "Rice", "Rasam, Pickle", "Soup"]
         },
         Sunday: {
-            Breakfast: ["Masala Dosa", "Sambhar, Chutney", "Fruit", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
-            Lunch: ["Fryums", "Onion Cucumber Raitha", "Roti", "Hyd Chicken Biryani", "Hyd Veg Biryani", "Masala Dal", "Matar Paneer"],
-            Snacks: ["Dhokla/Pasta, Sauce", "Milk-Tea-Coffee"],
-            Dinner: ["Chapathi", "Rice", "Veg Korma", "Dal Makhani", "Rasam", "Gulab Jamun/Gajar Halwa"]
+            Breakfast: ["Masala Dosa", "Sambhar, Chutney", "Fruit Salad/ Banana", "Bread-Butter-Jam", "Milk-Coffee-Tea"],
+            Lunch: [ "Onion Cucumber Raitha", "Roti", "Chicken Biryani", "Veg Biryani","Masala Dal/ Matar Paneer"],
+            Snacks: ["Dhokla/Dahi Vada", "Sauce",  "Milk-Tea-Coffee"],
+            Dinner: ["Chapathi", "Rice", "Veg Kolhapuri", "Masoor Dal/ Soya Masala", "Rasam", "Gulab Jamun/Gajar Halwa"]
         }
 
     };
