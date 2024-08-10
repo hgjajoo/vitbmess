@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-RE339KFVR5"
@@ -15,180 +14,21 @@
 
       gtag("config", "G-RE339KFVR5");
     </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
       href="https://cdn.discordapp.com/attachments/1161360870228635809/1176398464884670534/icon.png"
       type="image/icon type"
     />
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mess Timetable</title>
-    <style>
-      body {
-        font-family: "Andale Mono", monospace;
-        margin: 0;
-        padding: 0;
-        background-color: #1e1e1e;
-        color: #fff;
-        transition: background-color 0.3s, color 0.3s;
-      }
-
-      .container {
-        max-width: 600px;
-        margin: 50px auto;
-        background-color: #2a2a2a;
-        padding: 20px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-        border-radius: 8px;
-        transition: background-color 0.3s, box-shadow 0.3s;
-      }
-
-      h1 {
-        text-align: center;
-        color: #fff;
-      }
-
-      h2 {
-        text-align: center;
-        color: #727070;
-      }
-
-      label {
-        display: block;
-        margin-bottom: 10px;
-        color: #bbb;
-      }
-
-      select {
-        width: 100%;
-        padding: 12px;
-        margin-bottom: 20px;
-        border: none;
-        border-radius: 4px;
-        background-color: #444;
-        color: #fff;
-      }
-
-      #mealTimetable {
-        margin-top: 20px;
-        padding: 15px;
-        background-color: #333;
-        border-radius: 8px;
-        border: 1px solid #444;
-      }
-
-      strong {
-        color: #bbb;
-      }
-
-      .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-      }
-
-      .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-      }
-
-      .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        transition: background-color 0.4s;
-        border-radius: 34px;
-      }
-
-      .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        transition: transform 0.4s;
-        border-radius: 50%;
-      }
-
-      input:checked + .slider {
-        background-color: #2196f3;
-      }
-
-      input:focus + .slider {
-        box-shadow: 0 0 1px #2196f3;
-      }
-
-      input:checked + .slider:before {
-        transform: translateX(26px);
-      }
-
-      .button1 {
-        display: block;
-        margin: 0 auto;
-        padding: 10px 20px;
-        font-size: 15px;
-        text-align: center;
-        font-weight: bold;
-        text-decoration: none;
-        background-color: #1b1b1b;
-        color: #8d8d8d;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        width: 75px;
-      }
-
-      .button1:hover {
-        background-color: #1e1e1e;
-      }
-
-      h5 {
-        text-align: center;
-        color: #727070;
-      }
-    </style>
   </head>
-
   <body>
-    <div class="container">
-      <h1>Mayuri Mess Timetable</h1>
-      <h2>February '24</h2>
-      <label for="day">Select Day:</label>
-      <select id="day" onchange="updateMealTimetable()">
-        <option value="Monday">Monday</option>
-        <option value="Tuesday">Tuesday</option>
-        <option value="Wednesday">Wednesday</option>
-        <option value="Thursday">Thursday</option>
-        <option value="Friday">Friday</option>
-        <option value="Saturday">Saturday</option>
-        <option value="Sunday">Sunday</option>
-      </select>
-
-      <label for="meal">Select Meal:</label>
-      <select id="meal" onchange="updateMealTimetable()">
-        <option value="Breakfast">Breakfast</option>
-        <option value="Lunch">Lunch</option>
-        <option value="Snacks">Snacks</option>
-        <option value="Dinner">Dinner</option>
-      </select>
-
-      <div id="mealTimetable"></div>
-    </div>
-    <br />
-    <a
-      href="https://apps.volt.build/2ec17d77-6c93-4906-aeab-92535be63302/android.debug.apk"
-      class="button1"
-      >Get App</a
-    >
-    <script src="script.js"></script>
-    <h5>Developed by Harshvardhan G Jajoo</h5>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
