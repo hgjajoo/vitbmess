@@ -9,7 +9,7 @@ const MainContent = ({ menuFile, messName }) => {
   useEffect(() => {
     const fetchMenuData = async () => {
       try {
-        const response = await fetch(`/src/data/${menuFile}`);
+        const response = await fetch(`/data/${menuFile}`);
         if (!response.ok) throw new Error("Failed to fetch menu data");
         const data = await response.json();
         setMenuData(data);
